@@ -1802,6 +1802,7 @@ public function friendsfootprint($app_user_id){
 
 	public function iosnotify_friend($app_user_id) {
         CakeLog::write('friends1', print_r($app_user_id, 1));
+	CakeLog::write('vpro','pull check');
         $friendsList = $this->Program->getFriedsList($app_user_id);
         CakeLog::write('friends2', print_r($friendsList, 1));
         foreach($friendsList as $friend) {
